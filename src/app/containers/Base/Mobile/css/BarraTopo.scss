@@ -1,0 +1,95 @@
+@import '../../../../../css/config/variables.scss';
+@import '../../../../../css/config/layout.scss';
+
+
+// BARRA TOPO MOBILE
+.barra-topo-mobile{
+    position: fixed;
+    background-color: $cor-background-menu;
+    height: 60px;
+    color: white;
+
+    @include responsive(xl){
+        display: none;
+    }
+    @include responsive(l){
+        display: none;
+    }
+    //@include responsive(m){
+    //    display: none;
+    //}
+    
+}
+
+.barra-topo-mobile-active{
+    position: fixed;
+    height: 100vh;
+}
+
+.barra-topo-mobile i{
+    height: 25px;
+    width: 25px;
+
+    font-size: 24px; /* Defina o tamanho desejado para o ícone */
+    border-radius: 10px; /* Bordas arredondadas para criar a aparência de um botão */
+    padding: 10px; /* Espaçamento interno para criar espaço entre o ícone e a borda */
+
+    background-color: $cor-background-menu-item-active; 
+    color: var(--cor-branca); /* Cor do ícone (substitua pela cor desejada) */
+    cursor: pointer; /* Cursor ao passar o mouse para indicar interatividade */
+    display: inline-block; /* Para que o ícone seja exibido como um bloco em linha */
+    text-align: center; /* Centralizar o ícone horizontalmente */
+    line-height: 1; /* Centralizar o ícone verticalmente */
+    transition: transform 0.2s, box-shadow 0.2s; /* Efeitos de transição suave */
+
+    /* Defina outros estilos, como margens ou espaçamento, conforme necessário */
+    margin: 10px;
+}
+
+// ITENS DO MENU
+.items-wrapper-mobile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.menu-item-mobile{
+    width: 200px;
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.menu-item-mobile i{
+    background-color: transparent;
+    height: 25px;
+    width: 25px;
+
+    font-size: 24px; /* Defina o tamanho desejado para o ícone */
+   
+
+    /*background-color: $cor-background-menu-item-active;*/ 
+    color: var(--cor-branca); /* Cor do ícone (substitua pela cor desejada) */
+    cursor: pointer; /* Cursor ao passar o mouse para indicar interatividade */
+    display: inline-block; /* Para que o ícone seja exibido como um bloco em linha */
+    text-align: center; /* Centralizar o ícone horizontalmente */
+    line-height: 1; /* Centralizar o ícone verticalmente */
+    transition: transform 0.2s, box-shadow 0.2s; /* Efeitos de transição suave */
+
+    
+}
+
+.menu-item-mobile-active{
+    background-color: $cor-background-menu-item-active;
+    border-radius: 10px;
+}
+
+
+
+
+
+

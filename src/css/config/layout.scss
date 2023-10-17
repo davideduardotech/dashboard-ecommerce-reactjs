@@ -1,0 +1,68 @@
+// Container-devices
+$container-xl: 1440px;
+$container-l: 1140px;
+$container-m: 960px;
+$container-s: 540px;
+
+// Mixin of media-queries
+@mixin responsive($device) {
+  @if $device == xl {
+    // For resolutions upper 1440px (Computador/Notebook)
+    @media screen and (min-width: $container-xl) {
+      @content;
+    }
+  } @else if $device == l {
+    // For resolutions between 1140px and 1440px (Notebook)
+    @media screen and (max-width: $container-xl) and (min-width: $container-l) {
+      @content;
+    }
+  } @else if $device == m {
+    // For resolutions between 960px and 1440px (Tablet)
+    @media screen and (max-width: $container-l) and (min-width: $container-s) {
+      @content;
+    }
+  } @else if $device == s {
+    // For resolutions less than 960px (Mobile)
+    @media screen and (max-width: $container-m) {
+      @content;
+    }
+  } @else if $device == xs {
+    // For resolutions less than 540px (Mobile)
+    @media screen and (max-width: $container-s) {
+      @content;
+    }
+  }
+}
+
+@mixin responsiveMaxMin($maxWidth,$minWidth){
+  @media screen and (max-width: $maxWidth) and (min-width: $minWidth) {
+    @content;
+  }
+}
+
+@mixin responsiveLess($width){
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+// Width's
+.width-auto {
+  width: auto;
+}
+.w-100 {
+  width: 100%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-25 {
+  width: 25%;
+}
+
+.w-100px{
+  width: 200px;
+}

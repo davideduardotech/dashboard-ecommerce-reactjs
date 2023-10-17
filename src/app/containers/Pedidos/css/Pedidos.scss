@@ -1,0 +1,32 @@
+@import '../../../../css/config/cores.scss';
+@import '../../../../css/config/layout.scss';
+
+:root{
+    --cor-branca: #fff;
+
+    --cor-verde-background: #2CA063;
+    --cor-verde-claro: #4DBF88;
+    --cor-verde-escuro: #1F7C4D;
+
+    --cor-roxo: #5D5EEE;
+}
+
+.Pedidos{
+    
+    box-sizing: border-box;
+    
+    width: 100%;
+    height: 700px;
+   
+    padding: 40px 30px;
+    
+    
+    @include responsive(m){ // 960px and 1440px
+        
+        
+    }
+    @include responsive(s){ // less 960px
+        
+    }
+   
+}

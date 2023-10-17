@@ -1,0 +1,211 @@
+@import '../../../../css/config/cores.scss';
+@import '../../../../css/config/typography.scss';
+@import '../../../../css/config/layout.scss';
+
+
+:root{
+    --cor-verde-background: #2CA063;
+    --cor-verde-claro: #4DBF88;
+    --cor-verde-escuro: #1F7C4D;
+}
+
+/* TABELA */
+.tabela-simples-mascara{
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+
+
+    @include responsiveLess(1120px){
+        max-width: 650px;
+    }
+    @include responsive(s){
+        width: 100%;
+        max-width: 100%;
+    }
+    
+
+    
+}
+.tabela-simples-container{
+    overflow: auto;
+    width: 100%;
+    max-width: 100%; /* Define a largura máxima da tabela */
+    
+    @include responsiveLess(1120px){
+        max-width: 650px;
+    }
+    @include responsive(s){
+        width: 100%;
+        max-width: 100%;
+    }
+   
+    
+    
+   
+}
+
+
+/* Define estilos para a barra de rolagem em si */
+.tabela-simples-container::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    height: 5px;
+    @include responsive(s){ /* Mobile */
+        height: 4px;
+    }
+  }
+  
+  /* Define estilos para o "polegar" da barra de rolagem (a parte que você arrasta) */
+  .tabela-simples-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(220.94deg, $cor-verde-claro 14.43%, $cor-verde-normal 85.28%); /* Cor do polegar da barra de rolagem */
+  }
+  
+  /* Define estilos para a faixa (track) da barra de rolagem (a área na qual o polegar se move) */
+  .tabela-simples-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor de fundo da faixa da barra de rolagem */
+  }
+  
+  /* Define estilos para o "polegar" da barra de rolagem quando o mouse está sobre ele */
+  .tabela-simples-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do polegar quando o mouse está sobre ele */
+  }
+  
+  /* Define estilos para o canto da barra de rolagem (a área que conecta a barra de rolagem vertical à horizontal, se houver) */
+  .tabela-simples-container::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; /* Cor de fundo do canto da barra de rolagem */
+  }
+
+.tabela-simples{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+.tabela-simples th{
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform:capitalize;
+    font-size: 15px;
+    /*background: linear-gradient(220.94deg, $cor-verde-claro 14.43%, $cor-verde-normal 85.28%);*/
+   
+    color: black;
+
+    white-space:nowrap;
+    
+    padding: 8px 16px;
+}
+.tabela-simples thead{
+    /*background: linear-gradient(220.94deg, $cor-verde-normal 14.43%, $cor-verde-claro 85.28%);*/
+    
+    background-color: #eee;
+}
+.tabela-simples th:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.tabela-simples th:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tabela-simples td{
+    font-family: "Source Sans Pro", sans-serif;
+    
+    padding: 8px 16px;
+    text-align: center; /* Alinhar horizontalmente o conteúdo no centro */
+    vertical-align: middle; /* Alinhar verticalmente o conteúdo no meio */
+    border-bottom: 1px solid #999;
+    
+
+    white-space: nowrap;
+
+    
+}
+.transform-bold{
+    font-weight: 900;
+}
+
+
+/* COLUNA: SITUAÇÃO | WARNING*/
+.situacao-warning{
+    background-color: #FEEBC8;
+    padding: 4px 8px;
+    border-left: 5px solid #DD6B20;
+    
+
+    color: #2D3748;
+}
+.situacao-warning i{
+    margin-right: 5px;
+    font-weight: 900;
+    color: #DD6B20;
+}
+
+
+/* COLUNA: SITUAÇÃO | SUCCESS*/
+.situacao-success{
+    background-color: #C6F6D5;
+    padding: 4px 8px;
+   
+
+    border-left: 5px solid #38A169;
+    
+    
+    color: #2D3748;
+ 
+}
+.situacao-success i{
+    margin-right: 5px;
+    font-weight: 900;
+    color: #38A169;
+}
+
+/* COLUNA: SITUAÇÃO | DANGER*/
+.situacao-danger{
+    background-color: #FED7D7;
+    
+    border-left: none; 
+    padding: 4px 8px;
+    
+    color: #2D3748;
+ 
+}
+.situacao-danger i{
+    margin-right: 5px;
+    font-weight: 900;
+    color: #E53E3E;
+}
+
+
+
+/* COLUNA: SITUAÇÃO | WARNING*/
+.tabela-cliente-user{
+  
+    padding: 4px 8px;
+    
+}
+.tabela-cliente-user i{
+    margin-right: 5px;
+}
+
+.BotaoDetalhes button{
+    background: linear-gradient(220.94deg, $cor-verde-claro 14.43%, $cor-verde-normal 85.28%);
+    color: #fff;
+    
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+   
+    
+}
+.BotaoDetalhes button:hover{
+    transform: scale(1.1);
+}
+
+.BotaoDetalhes button i{
+    padding-right: 5px;
+}

@@ -1,0 +1,78 @@
+@import '../../../../../css/config/variables.scss';
+@import '../../../../../css/config/layout.scss';
+
+/* COMPONENTS */
+.menu-desktop{
+    
+    left: 200px;
+    background-color: $cor-background-menu;
+    width: 70px;
+    margin-right: 20px;
+  
+
+    
+    box-shadow: 0 0 5px #7777;
+    @include responsive(s){
+        display: none;
+    }
+
+}
+
+.menu-desktop a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-desktop-items-wrapper > div:last-child {
+margin-top: auto;
+margin-bottom: 50px;
+}
+
+
+.menu-desktop-open{
+    width: 180px;
+    
+}
+
+.menu-desktop-item{
+    height: 50px;
+  
+}
+
+.menu-desktop-item i{
+    font-size: 1.3rem;
+}
+
+
+
+.menu-desktop-item-active{
+    background-color: $cor-background-menu-item-active;
+    border-radius: 10px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+.menu-desktop-item-top i {
+    font-size: 24px; /* Defina o tamanho desejado para o ícone */
+    border-radius: 10px; /* Bordas arredondadas para criar a aparência de um botão */
+    padding: 10px; /* Espaçamento interno para criar espaço entre o ícone e a borda */
+
+    background-color: $cor-background-menu-item-active; 
+    color: var(--cor-branca); /* Cor do ícone (substitua pela cor desejada) */
+    cursor: pointer; /* Cursor ao passar o mouse para indicar interatividade */
+    display: inline-block; /* Para que o ícone seja exibido como um bloco em linha */
+    text-align: center; /* Centralizar o ícone horizontalmente */
+    line-height: 1; /* Centralizar o ícone verticalmente */
+    transition: transform 0.2s, box-shadow 0.2s; /* Efeitos de transição suave */
+
+    /* Defina outros estilos, como margens ou espaçamento, conforme necessário */
+    margin: 10px;
+}
+
+
+
+

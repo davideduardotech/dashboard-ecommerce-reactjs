@@ -1,0 +1,62 @@
+@import '../../../../../css/config/cores.scss';
+@import '../../../../../css/config/layout.scss';
+
+.barra-topo-desktop{
+    box-sizing: border-box;
+    background-color: $cor-background-menu;
+    margin-left: -20px;
+    width: calc(100% + 20px);
+    height: 60px;
+    
+    
+    @include responsive(m){ // 960px and 1440px
+        
+    }
+    
+
+    @include responsive(s){
+        display: none;
+    }   
+}
+
+
+.btn-ver-loja{
+    padding: 10px 20px;
+    /*background: linear-gradient(220.94deg, $cor-verde-claro 14.43%, $cor-verde-normal 85.28%);*/
+    border-radius: 10px;
+    color: #fff;
+
+    padding: 10px;
+    margin-right: 20px;
+
+    background-color: $cor-verde-claro;
+  
+    transition: background 0.3s ease;
+}
+
+.btn-ver-loja span{
+    color: white;
+    
+    
+}
+.btn-ver-loja i{
+    color: white;
+    font-size: 24;
+    margin-right: 10px;
+}
+
+.btn-sair{
+    border-radius: 10px;
+    background-color: $cor-verde-claro;
+    padding: 10px;
+    margin-right: 20px;
+}
+.btn-sair span{
+    color: white;
+  
+}
+.btn-sair i{
+    color: white;
+    font-size: 24;
+    margin-right: 10px;
+}

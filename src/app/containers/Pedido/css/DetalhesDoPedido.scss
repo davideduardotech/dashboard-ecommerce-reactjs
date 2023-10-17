@@ -1,0 +1,29 @@
+@import '../../../../css/config/layout.scss';
+@import '../../../../css/config/cores.scss';
+
+.dados-do-cliente, .dados-do-carrinho,.dados-da-entrega, .dados-de-pagamento{
+    min-width: 360px;
+
+}
+
+.dados-do-cliente i,  .dados-da-entrega i, .dados-do-carrinho i, .dados-de-pagamento i{
+    // FLEX
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // TAMANHO
+    height: 50px;
+    width: 50px;
+    @include responsive(s){ // 960px (Mobile)
+        width: 40px;
+        height: 40px;
+    }   
+
+    // ESPAÇAMENTO
+    margin-right: 10px;
+
+    color: #fff;
+    background: linear-gradient(220.94deg, $cor-verde-claro 14.43%, $cor-verde-normal 85.28%);
+    border-radius: 10px;
+}

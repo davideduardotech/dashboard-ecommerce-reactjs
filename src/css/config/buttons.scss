@@ -1,0 +1,50 @@
+@import './layout.scss';
+
+.button{
+    // FONTE
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+
+    // TAMANHO
+    padding: 7px 14px;
+    @include responsive(s){ // 960px (Mobile)
+        padding: 6px 12px;
+    }
+
+    // BORDA
+    border-radius: 10px;
+
+    // POINTER
+    cursor: pointer;
+  
+    // ANIMAÇÃO
+    transition: transform 0.3s ease;
+}
+.button:hover{
+    transform: scale(1.02);
+}
+.button-danger-line{
+    background-color: #FED7D7;
+    color: #2D3748;
+    /*color: #fff;*/
+    color: #E53E3E;
+
+    
+    /*background: linear-gradient(220.94deg, $cor-verde-claro 14.43%, $cor-verde-normal 85.28%);*/
+  
+    border: 1px solid #E53E3E;
+    
+    background-color: transparent;
+    transition: transform .3s ease;
+}
+.button-danger-line:hover{
+    background-color: #E53E3E;
+    border: none;
+    color: #fff;
+}
+.button-danger-line i{
+    margin-right: 5px;
+    font-weight: 900;
+    color: #E53E3E;
+    
+}

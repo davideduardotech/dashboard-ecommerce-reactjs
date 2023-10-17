@@ -1,0 +1,19 @@
+.Card{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    
+    border-radius: 20px;
+    /*border-left: 5px solid $cor-verde-normal;*/
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra mais perceptível */
+    
+    // MOBILE
+    @include responsive(m){ // 960px and 1440px
+        
+        
+    }
+    @include responsive(s){ // less 960px
+      
+    }   
+}

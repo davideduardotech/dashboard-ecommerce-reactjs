@@ -1,0 +1,52 @@
+@import '../../../../css/config/layout.scss';
+@import '../../../../css/config/cores.scss';
+
+
+:root{
+    --cor-verde-background: #2CA063;
+    --cor-verde-claro: #4DBF88;
+    --cor-verde-escuro: #1F7C4D;
+
+    --cor-branca: #fff;
+}
+
+.Pesquisa input{
+    font-family: "Source Sans Pro", sans-serif;
+   
+
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 80%;
+
+    box-shadow: 0 0 5px #eee;
+
+    outline: none; /* Remover a borda de foco padrão */
+    transition: border-color 0.3s; /* Adicionar uma transição suave para a borda */
+
+    /* Estilos de foco */
+    &:focus {
+        border-color: #999; /* Efeito de destaque quando o input está em foco */
+    }
+
+    @include responsive(s){
+        padding: 8px 16px;
+    }
+
+}
+
+.Pesquisa button{
+
+    margin-left: -40px;
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(220.94deg, $cor-verde-claro 14.43%, $cor-verde-normal 85.28%);
+    font-size: 1.1rem;
+    
+}
+
+.Pesquisa button i{
+    color: var(--cor-branca);
+}

@@ -1,0 +1,13 @@
+@import '../../../../css/config/layout.scss';
+
+.Pedido{
+    border: 2px solid blue;
+    padding: 64px 32px;
+    height:max-content;
+
+    overflow: auto;
+
+    @include responsive(s){
+
+    }
+}
